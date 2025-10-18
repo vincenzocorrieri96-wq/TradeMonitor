@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="it">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>TradeMonitor PWA</title>
+  <link rel="manifest" href="/manifest.json" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>TradeMonitor</h1>
+    <div class="controls">
+      <select id="symbol">
+        <option value="EURUSD">EUR/USD (EURUSD)</option>
+        <option value="BTCUSD">BTC/USD (BTCUSD)</option>
+      </select>
+      <select id="interval">
+        <option value="1min">1m</option>
+        <option value="5min">5m</option>
+        <option value="15min">15m</option>
+      </select>
+      <button id="refresh">Aggiorna ora</button>
+      <button id="auto">Auto start</button>
+    </div>
+
+    <canvas id="chart" height="300"></canvas>
+
+    <div class="info">
+      <p id="lastPrice">Prezzo: —</p>
+      <p id="signal">Segnale: —</p>
+      <p id="rsi">RSI: —</p>
+    </div>
+
+    <div class="log">
+      <h3>Log</h3>
+      <ul id="logList"></ul>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
