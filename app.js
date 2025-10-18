@@ -1,5 +1,5 @@
 // app.js - PWA client-side
-const API_KEY = "INSERISCI_LA_TUA_APIKEY"; // <-- metti qui la tua key TwelveData o simile
+const API_KEY = "83d11c61e23b411fb4ecf6806e6457b2"; // <-- metti qui la tua key TwelveData o simile
 const API_PROVIDER = "TWD"; // per chiarezza (Twelve Data)
 const chartCtx = document.getElementById("chart").getContext("2d");
 let chart;
